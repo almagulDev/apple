@@ -142,7 +142,11 @@ const Header = () => {
           {user
             ? ADMIN.map((el) => (el.email === user.email ? <AdminPanel /> : ""))
             : ""}
-          <Search>
+          <Search
+            style={{
+              backgroundColor: "rgba(235, 230, 230, 0.71)",
+            }}
+          >
             <SearchIconWrapper>
               <SearchIcon className={scss.search_icon} />
             </SearchIconWrapper>
