@@ -143,7 +143,7 @@ const ProductContext = ({ children }) => {
       let iphone = state.product.filter(
         (item) => item.category.toLowerCase() === category.toLowerCase()
       );
-      console.log(state.product);
+      console.log(state.product, "product");
 
       dispatch({
         type: "GET_PRODUCT",

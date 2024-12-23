@@ -46,7 +46,7 @@ export default function ProductCard({ item }) {
         {user
           ? ADMIN.map((el) =>
               el.email === user.email ? (
-                <CardActions>
+                <CardActions key={el.email}>
                   <Button
                     onClick={() => deleteProduct(item._id)}
                     variant="contained"

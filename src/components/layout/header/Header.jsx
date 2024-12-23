@@ -140,7 +140,9 @@ const Header = () => {
             <p>Support</p>
           </NavLink>
           {user
-            ? ADMIN.map((el) => (el.email === user.email ? <AdminPanel /> : ""))
+            ? ADMIN.map((el, index) =>
+                el.email === user.email ? <AdminPanel key={index} /> : ""
+              )
             : ""}
           <Search
             style={{

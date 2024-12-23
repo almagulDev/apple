@@ -7,5 +7,3 @@ export const ADMIN = [
     password: "avs123",
   },
 ];
-
-///
